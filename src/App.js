@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <div className="App w-screen h-screen bg-[#252525] flex justify-center">
+    <div className="container border my-[2rem] rounded-xl bg-gradient-to-tr from-[#2b2525] via-[#926767] to-[#574545]">
+<Header />
     </div>
-  );
+  </div>);
 }
 
 export default App;
