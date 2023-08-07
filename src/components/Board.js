@@ -25,7 +25,7 @@ const Board = () => {
                     (row + col) % 2 === 0 ? "bg-white" : "bg-gray-200"
                   }`}
                 >
-                  <span className="flex items-center justify-center text-3xl">{chessIcons[row * 8 + col]}</span>
+                  <span className="flex items-center justify-center text-3xl hover:scale-[1.1]">{chessIcons[row * 8 + col]}</span>
                 </td>
               ))}
             </tr>
