@@ -1,6 +1,6 @@
 import React from 'react'
 import { plus,settings, flip, share,
-bug, chat } from '../assets'
+bug, chat } from '../../assets'
 
 const Aside = () => {
     const aside = [

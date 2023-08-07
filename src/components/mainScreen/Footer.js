@@ -1,5 +1,5 @@
 import React from 'react'
-import {player2, queen } from '../assets'
+import {player2, queen } from '../../assets'
 
 const Footer = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import { queen, horse, player1 } from '../assets'
+import { queen, horse, player1 } from '../../assets'
 
 const Header = () => {
   return (
@@ -19,8 +19,8 @@ const Header = () => {
          </div>
          <div className='flex justify-end w-full space-x-5'>
            <div className='w-[2rem] h-[2rem] bg-white rounded-sm flex items-center justify-center'><span className='text-black'>+2</span></div>
-           <img className='h-[2rem]'  src={horse}/>
-           <img className='h-[2rem]' src={queen}/>
+           <img className='h-[2rem]'  src={horse} alt=''/>
+           <img className='h-[2rem]' src={queen} alt=''/>
          </div>
        </div>
     </div>
