@@ -7,7 +7,7 @@ const Header = () => {
        <div className='flex justify-between px-4 py-8 text-white shadow-md'>
          <div className='flex items-center justify-start w-full space-x-5'>
            <img src={player1} className='rounded-full w-[50px]' alt=''/>
-           <div>
+           <div className='hidden sm:block'>
             <div>Nicolas Jackson</div>
             <div>Points: 1195 &#46; RUS</div>
            </div>

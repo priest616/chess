@@ -38,7 +38,7 @@ const Table = () => {
   ];
 
   return (
-    <div className="flex items-center justify-center text-white ">
+    <div className="flex items-center justify-center text-white">
       <table className="hidden border border-gray-300 lg:block">
         <thead>
           <tr>

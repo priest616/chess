@@ -7,7 +7,7 @@ const Footer = () => {
       <div className='flex items-center justify-start w-full space-x-5'>
            <img src={player2} className='rounded-full w-[50px]' alt=''/>
            
-           <div>
+           <div className='hidden sm:block'>
             <div>Mary Sydneyleu</div>
             <div>Points: 1195 &#46; RUS</div>
            </div>
@@ -16,9 +16,9 @@ const Footer = () => {
              <div className='text-4xl'>0:09</div>
            </div>
          </div>
-         <div className='text-xl lg:text-6xl'>
+         {/* <div className='text-xl lg:text-6xl'>
             CheckMate!
-         </div>
+         </div> */}
          <div className='flex justify-end w-full'>
             <img src={queen} alt='' className='h-[2rem]'/>
          </div>

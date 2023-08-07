@@ -13,8 +13,8 @@ const Board = () => {
   ];
 
   return (
-    <div className="flex items-center justify-center rounded-md shadow-md ">
-      <table className="border border-gray-300 rounded-md">
+    <div className="flex items-center justify-center px-3 rounded-md shadow-md sm:px-0 ">
+      <table className="border border-gray-300 rounded-md ">
         <tbody>
           {[...Array(8)].map((_, row) => (
             <tr key={row}>
