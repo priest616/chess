@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
 
@@ -6,6 +7,11 @@ const LogIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,8 +20,8 @@ const LogIn = () => {
   };
 
   return (
-    <div>
-      <div className="h-screen w-screen bg-[#252525] border flex justify-evenly items-center">
+    <div className="h-screen w-screen bg-[#252525] border flex items-center mb-6 ">
+      <div className="container flex items-center mx-auto justify-evenly" >
         <div className="hidden md:block">
           <img
             src="https://cdn3.iconfinder.com/data/icons/hobbies-and-free-time-17/512/Chess_Chess_game_Game_Marketing_Pawn_Pawns_Strategy.png"
@@ -44,6 +50,7 @@ const LogIn = () => {
                 id="email"
                 name="email"
                 value={email}
+                placeholder="example@mail.com"
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 className="w-full px-3 py-2 leading-tight text-gray-700 border rounded appearance-none focus:outline-none focus:shadow-outline"
@@ -56,15 +63,25 @@ const LogIn = () => {
               >
                 Password
               </label>
+              <div className="relative border">
               <input
-                type="password"
+                type={showPassword ? "text" : "password"}
                 id="password"
                 name="password"
                 value={password}
+                placeholder="********"
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                className="w-full px-3 py-2 leading-tight text-gray-700 border rounded appearance-none focus:outline-none focus:shadow-outline"
+                className="w-full px-3 py-2 leading-tight text-gray-700 rounded appearance-none focus:outline-none focus:shadow-outline"
               />
+              <button
+                type="button"
+                onClick={togglePasswordVisibility}
+                className="absolute top-0 right-0 w-8 h-full px-2 py-2 text-gray-600 focus:outline-none"
+              >
+                {showPassword ? <FaRegEyeSlash /> : <FaRegEye />}
+              </button>
+              </div>
               <div className="flex items-center justify-between mt-2">
                 <label className="flex items-center">
                   <input
@@ -94,7 +111,7 @@ const LogIn = () => {
             </button>
             <p className="flex justify-center mt-6">
               Don't have an account?
-              <span className="font-[500] ml-1"> <Link to="/signup">Create Now</Link></span>
+              <span className="font-[500] ml-1">Create Now</span>
             </p>
           </form>
         </div>

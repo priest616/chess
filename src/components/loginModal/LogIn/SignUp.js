@@ -49,7 +49,7 @@ const SignUp = () => {
   const getPasswordColor = (rule) => (rule ? "text-green-500" : "text-black");
 
   return (
-    <div className="h-screen w-screen bg-[#252525] border flex justify-evenly items-center">
+    <div className="h-fit w-screen bg-[#252525] border  py-[5rem] flex justify-evenly items-center">
       <div className="hidden md:block">
         <img
           src="https://cdn0.iconfinder.com/data/icons/3d-dynamic-color/512/chess-dynamic-color.png"
@@ -141,7 +141,7 @@ const SignUp = () => {
               <button
                 type="button"
                 onClick={togglePasswordVisibility}
-                className="absolute top-0 right-0 w-8 h-full px-2 py-2 text-gray-600  focus:outline-none"
+                className="absolute top-0 right-0 w-8 h-full px-2 py-2 text-gray-600 focus:outline-none"
               >
                 {showPassword ? <FaRegEyeSlash /> : <FaRegEye />}
               </button>
@@ -214,7 +214,7 @@ const SignUp = () => {
               <button
                 type="button"
                 onClick={togglePasswordVisibility2}
-                className="absolute top-0 right-0 w-8 h-full px-2 py-2 text-gray-600  focus:outline-none"
+                className="absolute top-0 right-0 w-8 h-full px-2 py-2 text-gray-600 focus:outline-none"
               >
                 {showPassword2 ? <FaRegEyeSlash /> : <FaRegEye />}
               </button>
@@ -245,7 +245,7 @@ const SignUp = () => {
           </button>
           <p className="flex justify-center mt-6">
           Already have an account?
-              <span className="font-[500] ml-1"> <Link to="/signup">Log In</Link></span>
+              <span className="font-[500] ml-1">Log In</span>
             </p>
         </form>
       </div>
