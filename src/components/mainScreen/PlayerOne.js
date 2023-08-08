@@ -4,7 +4,7 @@ import { queen, horse, player1 } from '../../assets'
 const Header = () => {
   return (
     <div>
-       <div className='flex justify-between px-4 py-8 text-white shadow-md'>
+       <div className='flex justify-between px-4 py-8 text-white'>
          <div className='flex items-center justify-start w-full space-x-5'>
            <img src={player1} className='rounded-full w-[50px]' alt=''/>
            <div className='hidden sm:block'>

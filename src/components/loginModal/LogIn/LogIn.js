@@ -20,7 +20,7 @@ const LogIn = () => {
   };
 
   return (
-    <div className="h-screen w-screen bg-[#252525] border flex items-center mb-6 ">
+    <div className="h-screen w-screen bg-[#252525] flex items-center mb-6 ">
       <div className="container flex items-center mx-auto justify-evenly" >
         <div className="hidden md:block">
           <img
@@ -111,7 +111,7 @@ const LogIn = () => {
             </button>
             <p className="flex justify-center mt-6">
               Don't have an account?
-              <span className="font-[500] ml-1">Create Now</span>
+              <span className="font-[500] ml-1"><Link to={"/signup"}>Create Now</Link></span>
             </p>
           </form>
         </div>

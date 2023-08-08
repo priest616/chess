@@ -8,6 +8,8 @@ import share from './share.png'
 import chat from './chat.png'
 import player1 from "./player1.png"
 import player2 from "./player2.png"
+import chessIcon from "./chessicon.png"
+import loaderImg from "./loaderImg.png"
 
 export {
     horse,
@@ -19,5 +21,7 @@ export {
     share,
     chat,
     player1,
-    player2
+    player2,
+    chessIcon,
+    loaderImg
 }

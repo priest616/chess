@@ -1,49 +1,31 @@
 import React, { useEffect, useState } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import PlayerOne from "./PlayerOne";
+import PlayerTwo from "./PlayerTwo";
 import Aside from "./Aside";
 import Table from "./Table";
 import Board from "./Board";
 import MobileNav from "../nav/MobileNav";
-import { FadingDots } from "react-cssfx-loading";
-
-const Loader = () => {
-  return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen space-y-6">
-      <FadingDots />
-      <h2>Loading...</h2>
-    </div>
-  );
-};
 
 function Body() {
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 5000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <div>
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <div className="h-fit bg-[#252525] flex justify-center">
-          <div className="container border my-[2rem] rounded-xl bg-gradient-to-bl from-[#d3bbbb] via-[#666565] to-[#3f3f3f] flex flex-col justify-between">
-            <Header />
-            <div className="relative flex flex-col items-center justify-around lg:flex-row space-y-[3rem]">
-              <Aside />
-              <MobileNav />
-              <Board />
-              <Table />
-            </div>
-            <Footer />
+      <div className="h-fit pt-[4rem] bg-[#252525] flex flex-col items-center justify-center">
+        <div className="container border my-[2rem] rounded-xl bg-gradient-to-bl from-[#d3bbbb] via-[#666565] to-[#3f3f3f] flex flex-col justify-between">
+          <PlayerOne />
+
+          <div className="relative flex flex-col items-center justify-around space-y-8 lg:flex-row lg:space-y-0 lg:space-x-8">
+            <Aside />
+
+            <MobileNav />
+
+            <Board />
+
+            <Table />
           </div>
+
+          <PlayerTwo />
         </div>
-      )}
+      </div>
     </div>
   );
 }
