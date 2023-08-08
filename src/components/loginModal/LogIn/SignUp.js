@@ -49,7 +49,7 @@ const SignUp = () => {
   const getPasswordColor = (rule) => (rule ? "text-green-500" : "text-black");
 
   return (
-    <div className="h-fit w-screen bg-[#252525] py-[5rem] flex justify-evenly items-center">
+    <div className="h-fit w-screen bg-[#666666] py-[5rem] flex justify-evenly items-center">
       <div className="hidden md:block">
         <img
           src="https://cdn0.iconfinder.com/data/icons/3d-dynamic-color/512/chess-dynamic-color.png"

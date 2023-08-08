@@ -20,7 +20,7 @@ const LogIn = () => {
   };
 
   return (
-    <div className="h-screen w-screen bg-[#252525] flex items-center mb-6 ">
+    <div className="h-screen w-screen bg-[#666666] flex items-center mb-6 ">
       <div className="container flex items-center mx-auto justify-evenly" >
         <div className="hidden md:block">
           <img
