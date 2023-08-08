@@ -57,10 +57,10 @@ const Home = () => {
             <Loader />
           ) : (
         <div className="relative bg-black opacity-[0.6] w-screen h-fit">
-          <div className="container flex items-center justify-between">
-            <div>
-                <Fade delay={400} className="flex flex-col">
-                  <p className="text-[4rem] capitalize w-[29rem] font-[900] text-white font-jost leading-[4.5rem]">
+          <div className="container flex flex-col items-center justify-between lg:flex-row">
+            <div className="pt-[5rem]">
+                <Fade delay={400} className="flex flex-col items-center justify-center">
+                  <p className="text-[4rem] sm:text-[3rem] 2xsm:text-[2rem] 2xsm:w-[20rem] 2xsm:leading-[2.5rem] text-left capitalize w-[3rem] font-[900] text-white font-jost leading-[4.5rem]">
                     Bonita Home of online chess gaming
                   </p>
         
@@ -73,7 +73,7 @@ const Home = () => {
             </div>
             <Fade className="relative" delay={700}>
                 <img
-                  className="py-[4.5rem]"
+                  className="sm:py-[4.5rem] 2xsm:py-[3rem]"
                   src="https://cdn3.iconfinder.com/data/icons/business-3d-illustration-set/512/BusinessVOne09.png"
                   alt=""
                 />

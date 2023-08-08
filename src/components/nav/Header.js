@@ -118,13 +118,13 @@ const Header = () => {
             <motion.nav
               animate={isOpen ? "open" : "closed"}
               variants={variants}
-              className="absolute z-10 w-full px-4 mt-4 bg-gray-900 md:hidden h-fit"
+              className="absolute z-10 w-full px-4 mt-4 bg-[#666666] md:hidden h-fit"
             >
               {mobileMenus.map((menus, index) => {
                 return (
                   <a
                     key={index}
-                    href="/"
+                    href={index === 0 ? '/' : index === 1 ? '/play' : ''}
                     className="relative flex items-center gap-2 py-2 text-white hover:text-white"
                   >
                     {menus.icon} {menus.menu}
